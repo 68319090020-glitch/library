@@ -1,31 +1,194 @@
 <!DOCTYPE html>
-    <html lang="th">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หน้าแรกห้องสมุด</title>
-    </head>
-    <body>
-    <header>
-        <h1>ห้องสมุดวิทยาลัย</h1>
-        <nav>
-        <ul>
-        <li><a href="#">หน้าแรก</a></li>
-        <li><a href="#">หนังสือ</a></li>
-        <li><a href="#">ติดต่อ</a></li>
-    </ul>
-    </nav>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-5">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold flex items-center gap-3 hover:scale-105 transition-transform">
+                    <div class="bg-white/20 p-2 rounded-xl backdrop-blur-sm">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    ห้องสมุดวิทยาลัย
+                </h1>
+                <nav>
+                    <ul class="flex gap-6">
+                        <li><a href="index.html" class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg hover:bg-white/30 transition font-medium border-2 border-white/50">หน้าแรก</a></li>
+                        <li><a href="#" class="px-4 py-2 hover:bg-white/20 backdrop-blur-sm rounded-lg transition font-medium">หนังสือ</a></li>
+                        <li><a href="login.html" class="px-4 py-2 hover:bg-white/20 backdrop-blur-sm rounded-lg transition font-medium">ติดต่อ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
-    <section>
-        <h2>ยินดีต้อนรับ</h2>
-        <p>เว็บไซต์ห้องสมุดเพื่อการเรียนรู้</p>
-    </section>
-    </main>
-    <footer>
-    <p>2025 ห้องสมุดวิทยาลัย by Thanaphon</p>
-    </footer> 
-    </body>
-    </html>
 
-<link rel="stylesheet" href="style.css">
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16 text-center">
+        <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-12 max-w-4xl mx-auto border-4 border-purple-200">
+            <h2 class="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
+                ยินดีต้อนรับสู่ห้องสมุด
+            </h2>
+            <p class="text-2xl text-gray-700 font-medium">📚 เว็บไซต์ห้องสมุดเพื่อการเรียนรู้ที่ทุกคนเข้าถึงได้</p>
+            <div class="flex justify-center gap-4 mt-8">
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full font-bold shadow-lg">
+                    ✨ หนังสือมากกว่า 1,000 เล่ม
+                </div>
+                <div class="bg-gradient-to-br from-green-500 to-green-600 text-white px-6 py-3 rounded-full font-bold shadow-lg">
+                    🎯 เรียนฟรี 24 ชั่วโมง
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Grid -->
+    <main class="container mx-auto px-6 py-12">
+        <h3 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            📖 หนังสือแนะนำ
+        </h3>
+        
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Book Card 1 -->
+            <div class="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 overflow-hidden border-4 border-blue-200">
+                <div class="bg-gradient-to-br from-blue-400 to-cyan-500 h-56 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-blue-600/20 group-hover:scale-110 transition-transform"></div>
+                    <div class="relative z-10 text-white">
+                        <svg class="w-24 h-24 mx-auto drop-shadow-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <p class="text-center font-bold text-2xl mt-2">🐍 Python</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold">โปรแกรมมิ่ง</span>
+                    <h3 class="text-2xl font-bold my-3 text-gray-800">พื้นฐานการเขียนโปรแกรม</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">เรียนรู้พื้นฐานการเขียนโปรแกรมด้วยภาษา Python และหลักการคิดเชิงตรรกะอย่างสนุก</p>
+                    <button class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-6 py-3 rounded-xl transition w-full font-bold text-lg shadow-lg hover:shadow-xl">
+                        อ่านเลย! →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 2 -->
+            <div class="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 overflow-hidden border-4 border-purple-200">
+                <div class="bg-gradient-to-br from-purple-400 to-pink-500 h-56 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-purple-600/20 group-hover:scale-110 transition-transform"></div>
+                    <div class="relative z-10 text-white">
+                        <svg class="w-24 h-24 mx-auto drop-shadow-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        <p class="text-center font-bold text-2xl mt-2">📊 Data</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-bold">วิทยาศาสตร์</span>
+                    <h3 class="text-2xl font-bold my-3 text-gray-800">วิทยาศาสตร์ข้อมูล</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">ศึกษาการวิเคราะห์ข้อมูล การสร้างแบบจำลอง และการนำเสนอผลแบบมืออาชีพ</p>
+                    <button class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-xl transition w-full font-bold text-lg shadow-lg hover:shadow-xl">
+                        อ่านเลย! →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 3 -->
+            <div class="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 overflow-hidden border-4 border-orange-200">
+                <div class="bg-gradient-to-br from-orange-400 to-red-500 h-56 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-orange-600/20 group-hover:scale-110 transition-transform"></div>
+                    <div class="relative z-10 text-white">
+                        <svg class="w-24 h-24 mx-auto drop-shadow-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                        <p class="text-center font-bold text-2xl mt-2">🎨 Design</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-bold">ดีไซน์</span>
+                    <h3 class="text-2xl font-bold my-3 text-gray-800">เว็บดีไซน์สมัยใหม่</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">เรียนรู้การออกแบบเว็บไซต์ที่สวยงามด้วย Tailwind CSS และหลัก UI/UX</p>
+                    <button class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-xl transition w-full font-bold text-lg shadow-lg hover:shadow-xl">
+                        อ่านเลย! →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 4 -->
+            <div class="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 overflow-hidden border-4 border-green-200">
+                <div class="bg-gradient-to-br from-green-400 to-emerald-500 h-56 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-green-600/20 group-hover:scale-110 transition-transform"></div>
+                    <div class="relative z-10 text-white">
+                        <svg class="w-24 h-24 mx-auto drop-shadow-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-center font-bold text-2xl mt-2">💰 Finance</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-bold">การเงิน</span>
+                    <h3 class="text-2xl font-bold my-3 text-gray-800">การเงินส่วนบุคคล</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">เรียนรู้การจัดการเงิน การออม และการลงทุนอย่างชัดเจนเข้าใจง่าย</p>
+                    <button class="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-3 rounded-xl transition w-full font-bold text-lg shadow-lg hover:shadow-xl">
+                        อ่านเลย! →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 5 -->
+            <div class="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 overflow-hidden border-4 border-yellow-200">
+                <div class="bg-gradient-to-br from-yellow-400 to-orange-400 h-56 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-yellow-600/20 group-hover:scale-110 transition-transform"></div>
+                    <div class="relative z-10 text-white">
+                        <svg class="w-24 h-24 mx-auto drop-shadow-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        <p class="text-center font-bold text-2xl mt-2">💡 Ideas</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-bold">พัฒนาตัวเอง</span>
+                    <h3 class="text-2xl font-bold my-3 text-gray-800">ความคิดสร้างสรรค์</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">พัฒนาทักษะการคิดสร้างสรรค์ และแก้ปัญหาอย่างมีประสิทธิภาพ</p>
+                    <button class="bg-gradient-to-r from-yellow-500 to-orange-400 hover:from-yellow-600 hover:to-orange-500 text-white px-6 py-3 rounded-xl transition w-full font-bold text-lg shadow-lg hover:shadow-xl">
+                        อ่านเลย! →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 6 -->
+            <div class="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 overflow-hidden border-4 border-indigo-200">
+                <div class="bg-gradient-to-br from-indigo-400 to-blue-500 h-56 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-indigo-600/20 group-hover:scale-110 transition-transform"></div>
+                    <div class="relative z-10 text-white">
+                        <svg class="w-24 h-24 mx-auto drop-shadow-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                        <p class="text-center font-bold text-2xl mt-2">🌍 English</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold">ภาษา</span>
+                    <h3 class="text-2xl font-bold my-3 text-gray-800">ภาษาอังกฤษเบื้องต้น</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">เริ่มต้นเรียนภาษาอังกฤษด้วยวิธีที่สนุก เข้าใจง่าย ใช้ได้จริง</p>
+                    <button class="bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white px-6 py-3 rounded-xl transition w-full font-bold text-lg shadow-lg hover:shadow-xl">
+                        อ่านเลย! →
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-medium">© 2025 ห้องสมุดวิทยาลัย by Thanaphon ✨</p>
+            <p class="text-gray-400 mt-2">เรียนรู้ไปด้วยกัน สร้างอนาคตที่ดีกว่า 🚀</p>
+        </div>
+    </footer>
+</body>
+</html>
